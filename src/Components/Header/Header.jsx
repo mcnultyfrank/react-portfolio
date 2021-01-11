@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +11,23 @@ import {Github} from '@styled-icons/boxicons-logos/Github';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [scrollState, setScrollState] = useState("top")
+
+  // useEffect(() => {
+  //   listener = document.addEventListener("scroll", e => {
+  //     var scrolled = document.scrollingElement
+  //     console.log(scrolled);
+  //     if (scrolled > 2700) {
+  //     document.styleSheets.color = 'black';
+  //     } else {
+  //     return
+  //     }
+  //   })
+  //   return () => {
+  //     document.removeEventListener("scroll", listener)
+  //   }
+  // }, [scrollState])
+
     const noDisplayContents = {
       transform: 'translateX(200%)'
     }

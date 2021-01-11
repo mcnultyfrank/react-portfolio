@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #2C2A2C;
+    border-bottom: 1px solid #f6eee0;
     color: #f6eee0;
     overflow: hidden;
 
@@ -79,7 +80,7 @@
                 color: #BE3E35;
             }
             span:nth-child(2){
-                color: #36BF4A;
+                color: #5C73F2;
             }
         }
         .eighthTitle{
@@ -145,7 +146,7 @@
         color: #BE3E35;
     }
     .yarn {
-        padding-left: 0.5vw;
+        padding-left: 1vw;
         width: 15%;
         color: #5C73F2;
     }

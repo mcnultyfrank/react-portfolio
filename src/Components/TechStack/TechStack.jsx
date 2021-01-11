@@ -42,9 +42,10 @@ const TechStack = () => {
         <h2 className={styles.firstTitle}>Well versed in Object oriented programming language <span>JavaScript</span>, and superset <span>TypeScript</span></h2>
       </div>
       <div>
-        <h2 className={styles.secondTitle}>Adept in Front End Library <span>React.js</span>, and state management library <span>Redux</span></h2>
+        <h2 className={styles.secondTitle}>Adept in Front End Library <span>React.js</span></h2>
         <ReactLogo className = {styles.react}/>
-        <Redux className = {styles.redux}/>
+        {/* , and state management library <span>Redux</span> */}
+        {/* <Redux className = {styles.redux}/> */}
       </div>
       <div>
         <Jest className = {styles.jest}/>
