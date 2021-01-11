@@ -3,8 +3,11 @@ import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
-import {Lock} from '@styled-icons/material'
-import {Close} from '@styled-icons/evil/Close'
+import {LinkedinSquare} from '@styled-icons/boxicons-logos/LinkedinSquare';
+import {Github} from '@styled-icons/boxicons-logos/Github';
+
+
+
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -21,12 +24,16 @@ const Header = () => {
         <nav>
             <ul>
 
-                  <li><a className = {styles.navhome}><i class="fas fa-battery-full"><span class="tooltiptext"></span></i></a></li>
               <div className = {styles.desktopNav}>  
+                <div>
+                  <li><a>Home</a></li>                        
+                </div>
+                <div>
                   <li><a>Skills</a></li>                        
                   <li><a>Portfolio</a></li>
                   <li><a>About</a></li>
                   <li><a>Contact</a></li>
+                </div>
               </div>
               <div className = {styles.menuIconContainer} >
                   <FontAwesomeIcon onClick={() => setOpen(!open)} className={styles.menuIcon} icon={open === true ?  faWindowClose : faBars}/>
@@ -34,13 +41,16 @@ const Header = () => {
             </ul>
 
             <div style={open === true ? displayContents : noDisplayContents} className = {styles.burgerMenuList}>
-                {/* <FontAwesomeIcon onClick={() => setOpen(!open)} className={styles.menuIcon} icon={open === true ? faWindowClose : faBars}/> */}
                   <div>
+                    <li><a>Home</a></li>                        
+                    <li><a>Skills</a></li>                        
                     <li><a>Portfolio</a></li>
                     <li><a>About</a></li>
                     <li><a>Contact</a></li>
                   </div>
                   <div>
+                  <LinkedinSquare className = {styles.sideMenuIcon} />
+                  <Github className = {styles.sideMenuIcon} />
                   </div>
 
             </div> 

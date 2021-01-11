@@ -13,6 +13,12 @@ import {Css3} from '@styled-icons/boxicons-logos/Css3';
 import {Html5} from '@styled-icons/boxicons-logos/Html5';
 import {Sass} from '@styled-icons/fa-brands/Sass';
 import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
+import {Npm} from '@styled-icons/fa-brands/Npm';
+import {Yarn} from '@styled-icons/simple-icons/Yarn';
+import {Firebase} from '@styled-icons/simple-icons/Firebase';
+import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
+
+
 
 
 
@@ -57,9 +63,18 @@ const TechStack = () => {
         <h2 className = {styles.fifthTitle}>Skilled in web technology <span>HTML5</span>,style sheet language <span>CSS3</span> and scripting language <span>SASS</span></h2>
       </div>
       <div>
-        <h2 className = {styles.sixthTitle}>Skilled back-end environment <span>Node.js</span></h2>
+        <h2 className = {styles.sixthTitle}>Skilled in back-end environment <span>Node.js</span></h2>
         <Nodejs className = {styles.nodejs}/>
-
+      </div>
+      <div>
+        <Npm className = {styles.npm}/>
+        <Yarn className = {styles.yarn}/>
+        <h2 className = {styles.seventhTitle}>knowledgeable of package managers <span>NPM</span> and <span>Yarn</span></h2>
+      </div>
+      <div>
+        <h2 className = {styles.eighthTitle}>Experienced with NoSQL, document databases <span>MongoDB</span> and <span>Firebase</span></h2>
+        <Mongodb className = {styles.mongodb}/>
+        <Firebase className = {styles.firebase}/>
       </div>
     </div>
   );

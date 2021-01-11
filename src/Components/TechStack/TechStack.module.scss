@@ -19,6 +19,7 @@
         align-items: center;
         overflow: hidden;
         transition: 1s;
+        justify-content: space-around;
         &:hover {
             transform: scale(1.1);
             background-color: #f6eee0;
@@ -72,7 +73,22 @@
             span{
                 color: #36BF4A;
             }
-
+        }
+        .seventhTitle{
+            span{
+                color: #BE3E35;
+            }
+            span:nth-child(2){
+                color: #36BF4A;
+            }
+        }
+        .eighthTitle{
+            span{
+                color: #36BF4A;
+            }
+            span:nth-child(2){
+                color: #F2C335;
+            }
         }
 
     }
@@ -124,4 +140,22 @@
         width: 20%;
         color: #36BF4A;
     }
+    .npm {
+        width: 20%;
+        color: #BE3E35;
+    }
+    .yarn {
+        padding-left: 0.5vw;
+        width: 15%;
+        color: #5C73F2;
+    }
+    .mongodb {
+        width: 20%;
+        color: #36BF4A;
+    }
+    .firebase{
+        width: 18%;
+        color: #F2C335;
+    }
+
 }
