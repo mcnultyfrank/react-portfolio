@@ -1,0 +1,127 @@
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C2A2C;
+    color: #f6eee0;
+    overflow: hidden;
+
+    div {
+        border: 1px solid #f6eee0;
+        padding: 5vw;
+        margin: 5vw;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 2.2vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.1);
+            background-color: #f6eee0;
+            color: #2C2A2C;
+
+        }
+        .firstTitle{
+            span:nth-child(1){
+                color: #F2C335;
+            }
+            span:nth-child(2){
+                color: #5C73F2;
+            }
+        }
+        .secondTitle{
+            span:nth-child(1){
+                color: #0065FF;
+            }
+            span:nth-child(2){
+                color: #C05DFF;
+            }
+        }
+        .thirdTitle{
+            span{
+                color: #BE3E35;
+            }
+            span:nth-child(2){
+                color: #939DA6;
+            }
+        }
+        .fourthTitle{
+            span{
+                color: #BE3E35;
+            }
+            span:nth-child(2){
+                color: #939DA6;
+            }
+        }
+        .fifthTitle{
+            span{
+                color: #BE3E35;
+            }
+            span:nth-child(2){
+                color: #5C73F2;
+            }
+            span:nth-child(3){
+                color: #C05DFF;
+            }
+        }
+        .sixthTitle{
+            span{
+                color: #36BF4A;
+            }
+
+        }
+
+    }
+    .javascript{
+        width: 30%;
+        color: #F2C335;
+    }
+    .typescript {
+        width: 23%;
+        color: #5C73F2;
+    }
+    .react {
+        width: 23%;
+        color: #0065FF;
+    }
+    .redux {
+        width: 19%;
+        color: #C05DFF;
+    }
+    .jest {
+        width: 17%;
+        color: #BE3E35;
+    }
+    .cypress {
+        width: 15%;
+        color: #939DA6;
+    }
+    .github {
+        width: 15%;
+        color: #939DA6;
+    }
+    .git {
+        width: 15%;
+        color: #BE3E35;
+    }
+    .html {
+        width: 20%;
+        color: #BE3E35;
+    }
+    .css {
+        width: 20%;
+        color: #5C73F2;
+    }
+    .sass {
+        width: 20%;
+        color: #C05DFF;
+    }
+    .nodejs {
+        width: 20%;
+        color: #36BF4A;
+    }
+}

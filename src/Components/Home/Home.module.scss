@@ -1,0 +1,129 @@
+    .container{
+            position: relative;
+            background-color: #B5AFA5;
+            /* background-image: url("Photos/noise.gif"); */
+            z-index: 0;
+            background-size: cover;
+            overflow: hidden;
+    }
+    
+    .videoContainer {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .videoBG {
+        z-index: -1;
+        position: absolute;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .fa-battery-full {
+        font-size: 2vw;
+        /* animation: shake 0.5s; */
+    }
+    
+    .fas .tooltiptext {
+        font-size: 1vw;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        visibility: hidden;
+        width: 100px;
+        background-color: transparent;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding-left: 10px;
+        position: absolute;
+        left: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+    
+    .fas:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .fa-battery-quarter {
+        color: #F2E56F;
+        opacity: 0.5;
+    }
+    
+    .fa-battery-full {
+        opacity: 1;
+    }
+    
+    
+    .heroText {
+        position: absolute;
+        color: white;
+        opacity: 0.8;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        bottom: 10%;
+        p {
+            align-self: flex-start;
+            font-size: 8vw;
+            margin: 1vw;
+            padding: 2vw 0vw 1vw 0vw;
+            border-radius: 3px;
+        }
+        h3 {
+            align-self: flex-end;
+            border-radius: 3px;
+            font-size: 3vw;
+            margin: 1vw;
+            padding: 2vw 0vw 1vw 0vw;
+        }
+    }
+    .typing {
+        z-index: 1;
+        animation: typing 10s steps(100, end), blink-caret 0.75s step-end infinite;
+    }
+    
+    .blinking {
+        animation: blinkingText 2.2s infinite;
+    }
+    
+    .downArrow {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.05);
+        color: white;
+        height: 10vh;
+        top: 90vh;
+        position: absolute;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: 0.3s;
+        opacity: 0.5;
+    }
+    
+    .downArrow:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .fa-angle-down {
+        height: 0;
+        z-index: -1;
+        font-size: 3vw;
+        background-color: transparent;
+        animation: float2 1s infinite;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .fa-angle-down:hover {
+        font-size: 2.8vw;
+    }
+    
+    
