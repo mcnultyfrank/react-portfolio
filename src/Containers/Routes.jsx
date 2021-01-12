@@ -13,10 +13,10 @@ const Routes = () => {
   return (
     <>
         <Router>
-          <Contact path = "/contact"/>
           <Home path = "/"/>
-          <TechStack path = "/skills"/>
-          <Portfolio path = "/portfolio" />
+          <Contact path = "contact"/>
+          <TechStack path = "skills"/>
+          <Portfolio path = "portfolio" />
         </Router>
     </>
 

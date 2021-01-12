@@ -7,21 +7,10 @@ import styled from 'styled-components';
 import {LinkedinSquare} from '@styled-icons/boxicons-logos/LinkedinSquare';
 import {Github} from '@styled-icons/boxicons-logos/Github';
 
-
-
-
-
-
-
 const Header = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
-  
-  const [scrollState, setScrollState] = useState("top")
+  const [colour, setColour] = useState(false);
 
-  // useEffect(() => {
-  //   return document.location.pathname;
-  //   }, [])
 
 
     const noDisplayContents = {
@@ -31,38 +20,45 @@ const Header = () => {
       transform: 'translateY(100%)',
       transform: 'translateX(100%)'
     }
-    const colorstyles = {
-      black: 'black',
-      white: 'white'
+    const blackLink = {
+      color: '#2C2A2C',
     }
+    
+    const whiteLink = {
+      color: 'white'
+    }
+    const underline = {
+      textDecoration: 'underline'
+    }
+
   return (
     <>
       <header>
-        <nav>
+        <nav >
             <ul>
 
               <div  className = {styles.desktopNav}>  
                 <div>
-                  <li><a><Link to= '/'>Home</Link></a></li>                        
+                  <li><Link to= '/'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Home</a></Link></li>                        
                 </div>
                 <div>
-                  <li><a>Skills</a></li>                        
-                  <li><a>Portfolio</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Contact</a></li>
+                  <li><Link to = '/skills'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>                        
+                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)} style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
+                  <li><a style = {colour === true ? blackLink : whiteLink}>About</a></li>
+                  <li><Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Contact</a></Link></li>
                 </div>
-              </div>
+              </div> 
               <div className = {styles.menuIconContainer} >
-                  <FontAwesomeIcon onClick={() => setOpen(!open)} icon={open === true ?  faTimes : faBars} className={styles.menuIcon}  />
+                  <FontAwesomeIcon onClick={() => setOpen(!open)} icon={open === true ?  faTimes : faBars} style = {colour === true ? blackLink : whiteLink} className={styles.menuIcon}  />
             </div>
             </ul>
 
-            <div  style={open === true ? displayContents : noDisplayContents} className = {styles.burgerMenuList}>
+            <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
                   <div>
-                    <li><a>Skills</a></li>                        
-                    <li><a>Portfolio</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Contact</a></li>
+                  <li><Link to = '/skills'><a onClick = {() => setColour(false)}>Skills</a></Link></li>                        
+                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}>Portfolio</a></Link></li>
+                  <li><a>About</a></li>
+                  <li><Link to = '/contact'><a onClick = {() => setColour(false)}>Contact</a></Link></li>
 
                   </div>
                   <div>

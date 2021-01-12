@@ -82,7 +82,6 @@ const TechStack = () => {
           <Firebase className = {styles.firebase}/>
         </div>
       </div>
-      <Portfolio />
     </div>
     
   );

@@ -5,6 +5,7 @@
         grid-auto-rows: minmax(200px, auto);
         background-color: #2C2A2C;
         transition: 0.2s;
+        
         button {
             font-size: 20px;
             color: #5C554A;
@@ -20,7 +21,8 @@
             
         }
         article {
-            // box-shadow: 0  5px 10px rgb(154,160,185,0.05),
+            // box-shadow: 0  5px 10px rgb(154,160,185,0.05)
+
                 color: white;
                 position: relative;
                 border-right: 0px;
