@@ -66,24 +66,34 @@
     .heroText {
         position: absolute;
         color: white;
-        opacity: 0.8;
         display: flex;
-        width: 100%;
         flex-direction: column;
-        bottom: 10%;
+        bottom: 0%;
+        width: 100%;
         p {
+            border: 1px solid #f6eee0;
+            background-color: rgba($color: #2C2A2C, $alpha: 0.7);
+            padding: 2vw;
             align-self: flex-start;
-            font-size: 8vw;
-            margin: 1vw;
-            padding: 2vw 0vw 1vw 0vw;
-            border-radius: 3px;
-        }
-        h3 {
-            align-self: flex-end;
-            border-radius: 3px;
-            font-size: 3vw;
-            margin: 1vw;
-            padding: 2vw 0vw 1vw 0vw;
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 0.1vw;
+            margin-left: 0.5vw;
+
+            // padding: 2vw 0vw 1vw 0vw;
+            border-radius: 20px;
+            opacity: 1;
+            transition: 1s;
+
+            &:hover {
+                &:hover {
+                    transform: scale(1.05);
+                    background-color: #f6eee0;
+                    color: #2C2A2C;
+        
+                }
+            }
+            
         }
     }
     .typing {
@@ -126,4 +136,23 @@
         font-size: 2.8vw;
     }
     
+    .javascript{
+        animation: animate 10s infinite;
+
+        opacity: 0.3;
+        width: 5%;
+        color: #F2C335;
+    }
+    .typescript {
+        animation: animate 30s infinite;
+        opacity: 0.3;
+        width: 3%;
+        color: #5C73F2;
+    }
+
+    @keyframes animate{
+    0% {color: #5C73F2 }
+    50% {color: #F2C335}
+    100% {color: #5C73F2 }
+    }
     

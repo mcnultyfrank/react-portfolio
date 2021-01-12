@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Portfolio.module.scss";
+import Header from "../Header";
 import dadaImage from "../../Photos/dadamac.png";
 import punkApiImage from "../../Photos/punkapi.png";
 import weatherImage from "../../Photos/ipadiphonweatherapp.png";
@@ -13,6 +14,7 @@ import morseImage from "../../Photos/morseipad.png";
 
 
 const Portfolio = () => {
+    
   return (
     <div>
   <section className = {styles.portfolioPage} id = "portfolio-page">
