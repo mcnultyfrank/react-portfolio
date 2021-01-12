@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "@reach/router";
 import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
@@ -43,7 +44,7 @@ const Header = () => {
 
               <div className = {styles.desktopNav}>  
                 <div>
-                  <li><a>Home</a></li>                        
+                  <li><a><Link to= {'/'}>Home</Link></a></li>                        
                 </div>
                 <div>
                   <li><a>Skills</a></li>                        
