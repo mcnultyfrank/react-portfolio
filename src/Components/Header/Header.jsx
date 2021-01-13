@@ -12,10 +12,9 @@ const Header = () => {
   const [colour, setColour] = useState(false);
   const [url, setUrl] = useState('');
  
-    useEffect(() => {
-      return setUrl(window.location.pathname)
-    }, [url, open])
-    console.log(url == '/portfolio');      
+    // useEffect(() => {
+    //   return     console.log(document.scrollingElement.);
+    // }, [ ])
 
 
     const noDisplayContents = {
@@ -60,16 +59,16 @@ const Header = () => {
 
             <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
                   <div>
+                    <h3>Frank McNulty</h3>
                   <li><Link to = '/skills'><a onClick = {() => setColour(false)}>Skills</a></Link></li> 
-                  <li><Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>About</a></Link></li>
+                  <li><Link to = '/about'><a onClick = {() => setColour(false)}>About</a></Link></li>
                   <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColour(false)}>Contact</a></Link></li>
-
                   </div>
-                  <div>
-                  <LinkedinSquare className = {styles.sideMenuIcon} />
-                  <Github className = {styles.sideMenuIcon} />
-                  </div>
+                  <section>
+                    <a className = {styles.sideMenuIcon}  href = "https://www.linkedin.com/in/frank-mcnulty-591785151/"   target="_blank" ><LinkedinSquare  /> </a>
+                    <a className = {styles.gitMenuIcon} href = "https://github.com/mcnultyfrank"  target="_blank"><Github  /></a>
+                  </section>
 
             </div> 
   

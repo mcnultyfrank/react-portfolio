@@ -9,13 +9,8 @@ import notesImage from "../../Photos/Untitled-2.png";
 import morseImage from "../../Photos/morseipad.png";
 import {Javascript} from '@styled-icons/boxicons-logos/Javascript';
 import {ReactLogo} from '@styled-icons/boxicons-logos/ReactLogo';
+import {Firebase} from '@styled-icons/simple-icons/Firebase';
 import {InfoCircleFill} from '@styled-icons/bootstrap/InfoCircleFill';
-
-
-
-
- 
-
 
 const Portfolio = () => {
     const [infoToggle, setInfoToggle] = useState(false)
@@ -25,25 +20,26 @@ const Portfolio = () => {
     const hidePortfolio = {
         opacity: '0.07'
     }
+    
   return (
     <div> 
   <section className = {styles.portfolioPage} >
     
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null}  src={dadaImage} srcset=""/>
+            <img style = {infoToggle === true ? hidePortfolio : null}   src={dadaImage} srcset=""/>
             <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
             <div style = {infoToggle === false ? noDisplayInfo : null}>
-                <li>Dada <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/></li>
+                <li>Dada <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/><Firebase className = {styles.firebase}/></li>
                 <p>Progressive Web App for Parental education, targeted at Dads</p>
             </div>
             <a href = "https://github.com/mcnultyfrank/Dada" target="_blank"><button className = {styles.codeButton}>Code</button></a>
             <a href = "https://dada-da4d5.web.app/" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
-        <article>
+        <article> 
             <img style = {infoToggle === true ? hidePortfolio : null} src={punkApiImage}/>
             <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
             <div style = {infoToggle === false ? noDisplayInfo : null}>
-                <li>Brewdog API <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/></li>
+                <li>Brewdog API <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/><Firebase className = {styles.firebase}/></li>
                 <p>Functional React Application built using an API to find the finest brews</p>
             </div>
             <a href = "https://github.com/mcnultyfrank/Punk-Api" target="_blank"><button className = {styles.codeButton}>Code</button></a>
