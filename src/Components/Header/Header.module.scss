@@ -7,6 +7,22 @@
         background-color: transparent;
         border: 2px;
         font-size: 25px;
+        div {
+            div a:after {
+                content: "";
+                position: absolute;
+                height: 0.15vw;
+                background-color: white;
+                width: 0;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+            }
+        }
         a {
             text-decoration: none;
             position: relative;
@@ -44,21 +60,8 @@
         width: 100vw;
 
     }
-    
-    div a:after {
-        content: "";
-        position: absolute;
-        height: 0.15vw;
-        background-color: white;
-        width: 0;
-        left: 50%;
-        bottom: 0;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-        transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-    }
+   
+ 
     
     // a:hover {
     //     color: white;

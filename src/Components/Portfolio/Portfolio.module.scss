@@ -3,9 +3,8 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-auto-rows: minmax(200px, auto);
-        background-color: #2C2A2C;
-        transition: 0.2s;
         
+        transition: 0.2s;
         button {
             font-size: 20px;
             color: #5C554A;
@@ -30,10 +29,58 @@
                 margin: 1px;
                 transition: 0.5s ease;
                 text-align: center;
+                div {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // align-items: center;
+                    text-align: center;
+                    font-size: 30px;
+                    color: black;
+                    height: 100%;
+                    width: 100%;
+                }
+                li {
+                    font-size: 5vw;
+                    list-style: none;
+                    
+                        .javascript{
+                            width: 15%;
+                            color: #F2C335;
+                        }
+                        .react {
+                            width: 13%;
+                            color: #0065FF;
+                        }
+                    
+                }
+                p {
+                    font-size: 90%;
+                }
+                .appInfoButton {
+                    position: absolute;
+                    bottom: 15%;
+                    right: 0%;
+                    width: 15%;
+                    height: 15%;
+                    border-top-left-radius: 10px;
+                    color: #2C2A2C;
+                    background: #f6eee0;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: #2C2A2C;
+                        color: white;
+
+                    }
+                    .q {
+                    width: 40%;
+                }
+                }
                 img {
                     border-radius: 1px;
-                    
-                    image-rendering: optimizeQuality;
+                    image-rendering: pixelated;
                     position: absolute;
                     object-fit: cover;
                     background-size: cover;
@@ -47,19 +94,19 @@
                     /* height: 1fr; */
                     /* padding-top: 250px; */
                 }
-                div {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-                h2{
-                    font-size: 40px;
-                    border-bottom: 1px solid black;
-                    margin: 3vw;
-                }
-                }
+                // div {
+                // height: 100%;
+                // width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // text-align: center;
+                // align-items: center;
+                // h2{
+                //     font-size: 40px;
+                //     border-bottom: 1px solid black;
+                //     margin: 3vw;
+                // }
+                // }
             
             }
     }
@@ -149,6 +196,34 @@
         grid-row: 11/13;
     }
 }
+    .portfolioList {
+        display: flex;
+        flex-direction: column;
+        background-color: #2C2A2C;
+        color: #f6eee0;
+        h3 {
+            font-size: 40px;
+            align-self: center;
+        }
+
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline;
+            .javascript{
+                width: 5%;
+                color: #F2C335;
+            }
+            .react {
+                width: 3%;
+                color: #0065FF;
+            }
+        }
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1028px){
 

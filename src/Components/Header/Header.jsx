@@ -10,7 +10,12 @@ import {Github} from '@styled-icons/boxicons-logos/Github';
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [colour, setColour] = useState(false);
-
+  const [url, setUrl] = useState('');
+ 
+    useEffect(() => {
+      return setUrl(window.location.pathname)
+    }, [url, open])
+    console.log(url == '/portfolio');      
 
 
     const noDisplayContents = {
@@ -42,9 +47,9 @@ const Header = () => {
                   <li><Link to= '/'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Home</a></Link></li>                        
                 </div>
                 <div>
-                  <li><Link to = '/skills'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>                        
-                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)} style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
-                  <li><a style = {colour === true ? blackLink : whiteLink}>About</a></li>
+                  <li><Link to = '/skills'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>
+                  <li><Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true  ? blackLink : whiteLink}>About</a></Link></li>                    
+                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Contact</a></Link></li>
                 </div>
               </div> 
@@ -55,9 +60,9 @@ const Header = () => {
 
             <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
                   <div>
-                  <li><Link to = '/skills'><a onClick = {() => setColour(false)}>Skills</a></Link></li>                        
+                  <li><Link to = '/skills'><a onClick = {() => setColour(false)}>Skills</a></Link></li> 
+                  <li><Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>About</a></Link></li>
                   <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}>Portfolio</a></Link></li>
-                  <li><a>About</a></li>
                   <li><Link to = '/contact'><a onClick = {() => setColour(false)}>Contact</a></Link></li>
 
                   </div>

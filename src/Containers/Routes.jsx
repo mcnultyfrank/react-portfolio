@@ -5,6 +5,7 @@ import Home from "../Components/Home";
 import TechStack from "../Components/TechStack";
 import Portfolio from "../Components/Portfolio";
 import Contact from "../Components/Contact";
+import About from "../Components/About";
 import { Router} from "@reach/router";
 
 
@@ -14,6 +15,7 @@ const Routes = () => {
     <>
         <Router>
           <Home path = "/"/>
+          <About path = "/about"/>
           <Contact path = "contact"/>
           <TechStack path = "skills"/>
           <Portfolio path = "portfolio" />
