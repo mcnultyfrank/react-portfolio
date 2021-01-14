@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "@reach/router";
 import styles from "./Home.module.scss";
 import TechStack from "../TechStack";
@@ -17,6 +17,10 @@ import {Github} from '@styled-icons/boxicons-logos/Github';
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [colour, setColour] = useState(false);
+
+  useEffect(() => {
+    return   window.scrollTo(0, 0);
+  },[])
   const blackLink = {
     color: '#2C2A2C',
   }

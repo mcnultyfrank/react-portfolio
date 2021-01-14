@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "./About.module.scss";
 import me from "../../Photos/me.JPG"
 import india from "../../Photos/india.jpg"
@@ -10,6 +10,10 @@ import recommendation2 from "../../Photos/recommendation2.png"
 
 
 const About = () => {
+
+  useEffect(() => {
+    return   window.scrollTo(0, 0);
+  },[])
   return (
     <>
     <section className = {styles.aboutPage}>
@@ -28,10 +32,10 @@ const About = () => {
                 <br></br>
                 I'm always looking to expand my repertoire of technologies. I'm currently learning about serverless technology and the cloud.                  
                 </p>
-                <img src= {me} alt="" srcset=""/>
+                <img src= {me} className = {styles.bioImgs} alt="" srcset=""/>
           </div>
           <div>
-                <img src= {india} alt="" srcset=""/>
+                <img className = {styles.bioImgs} src= {india} alt="" srcset=""/>
                 <div>
                   <p>
                   I love to travel and in 2019 went exploring around India and Nepal for 6 months.

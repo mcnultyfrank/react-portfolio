@@ -92,6 +92,11 @@
     @media screen and (max-width: 1024px){
         .aboutPage {
             article{
+                .recommendationsContainer {
+                    img {
+                        width: 60%; 
+                    }
+                }
                 div {
                     flex-direction: column;
                     img {
@@ -101,4 +106,5 @@
                 }
             }
         }
+                
     }

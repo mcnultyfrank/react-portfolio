@@ -33,6 +33,9 @@ import AOS from 'aos';
 
 const TechStack = () => {
   useEffect(() => {
+    return   window.scrollTo(0, 0);
+  },[])
+  useEffect(() => {
       AOS.init();
     }, [])
     

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./Portfolio.module.scss";
 import Header from "../Header";
 import dadaImage from "../../Photos/dadamac.png";
@@ -13,6 +13,9 @@ import {Firebase} from '@styled-icons/simple-icons/Firebase';
 import {InfoCircleFill} from '@styled-icons/bootstrap/InfoCircleFill';
 
 const Portfolio = () => {
+    useEffect(() => {
+        return window.scrollTo(0, 0);
+      },[])
     const [infoToggle, setInfoToggle] = useState(false)
     const noDisplayInfo = {
         display: 'none'
