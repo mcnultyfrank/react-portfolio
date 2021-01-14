@@ -25,7 +25,7 @@ const Home = () => {
     <div className={styles.container}>
       {/* <Header /> */}
         <div className={styles.videoContainer}>
-          <video className= {styles.videoBG} autoPlay muted loop playsinline src={backgroundVideo} type=""></video>
+          <video className= {styles.videoBG} autoPlay muted loop src={backgroundVideo} type=""></video>
           <section className = {styles.heroTextContainer}>
             <article className = {styles.heroText}> 
                 <p>Hi, i'm Frank McNulty, a software developer based in the UK</p>
