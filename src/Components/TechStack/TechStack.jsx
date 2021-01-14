@@ -57,7 +57,7 @@ const TechStack = () => {
           <h2 className = {styles.thirdTitle}>Proficient in unit testing Framework <span>Jest</span> and End to End testing Framework <span>Cypress.io</span></h2>
         </div>
         <div>
-          <h2 className = {styles.fourthTitle}>Competent in version control system <span>Git</span> and hosting development software <span>Github</span></h2>
+          <h2 className = {styles.fourthTitle}>Competent in version control system <span>Git</span> and hosting development software <span>GitHub</span></h2>
           <Git className = {styles.git}/>
           <Github className = {styles.github}/>
         </div>

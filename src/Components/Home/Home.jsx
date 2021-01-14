@@ -32,7 +32,7 @@ const Home = () => {
                 {/* <img src = {waving}></img> */}
                 <div>
                   {/* <button><Link to = '/portfolio'><a className = {styles.heroTextButtons} onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : null}>View my work</a></Link></button> */}
-                  <button><a className = {styles.heroTextButtons} href = "https://github.com/mcnultyfrank" target="_blank">View my <span>Github</span></a></button>
+                  <button><a className = {styles.heroTextButtons} href = "https://github.com/mcnultyfrank" target="_blank">View my <span>GitHub</span></a></button>
                   <button><a className = {styles.heroTextButtons} href = "https://www.linkedin.com/in/frank-mcnulty-591785151/" target="_blank">View my <span>linkedIn</span></a></button>
                 </div>
             </article> 
