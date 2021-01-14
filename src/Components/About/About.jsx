@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./About.module.scss";
 import me from "../../Photos/me.JPG"
 import india from "../../Photos/india.jpg"
+import recommendation1 from "../../Photos/recommendation1.png"
+import recommendation2 from "../../Photos/recommendation2.png"
+
+
 
 
 
@@ -9,10 +13,9 @@ const About = () => {
   return (
     <>
     <section className = {styles.aboutPage}>
-
       <article >
         <h2>Hey <span className={styles.wave}> 👋</span></h2>
-        <div>
+          <div>
             <p>
                 I'm a Software Developer and a graduate from _nology, where I completed a full-time 12-week course. 
                 <br></br>
@@ -26,26 +29,26 @@ const About = () => {
                 I'm always looking to expand my repertoire of technologies. I'm currently learning about serverless technology and the cloud.                  
                 </p>
                 <img src= {me} alt="" srcset=""/>
-
-        </div>
+          </div>
           <div>
                 <img src= {india} alt="" srcset=""/>
                 <div>
                   <p>
-                    I love to travel and in 2019 went exploring around India and Nepal for 6 months.
-                    </p>
-                  <br></br>
+                  I love to travel and in 2019 went exploring around India and Nepal for 6 months.
+                  </p>
                   <br></br>
                   <p>I'm also a University graduate and have a 2:1 BSC from The University Of West of England in Audio and Music Technology, where I learned to develop electronic synthesisers in C and C++.</p>
                   <br></br>
-                  <br></br>
                   <p>As well as coding, I'm obsessed about music and produce electronic music in Ableton Live, and DJ as a hobby on my Technics and  CDJs.</p>
                 </div>
-          </div>
-          <div>
-             
-              </div>
+          </div>      
+          <h3>Recommendations</h3>
+          <div classname = {styles.recommendationsContainer} >
+            <img src={recommendation1} alt="" srcset=""/>
+            <img src={recommendation2} alt="" srcset=""/>
+
             
+          </div>
       </article>    
     </section>
 

@@ -9,12 +9,13 @@
         color: #f6eee0;
         display: flex;
         flex-direction: column;
+        
        
             div {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                border-bottom: 2px solid #BE3E35;
+                border-bottom: 1px solid #BE3E35;
                 div {
                     display: flex;
                     flex-direction: column;
@@ -58,8 +59,14 @@
             font-weight: 700;
             color: #BE3E35;
             border-radius: 10px;
-
             }
+            h3{
+                font-size: 30px;
+                padding: 20px;
+                font-weight: 500;
+                color: #BE3E35;
+                border-radius: 10px;
+                }
         p {
         font-size: 30px;
         font-weight: 500;
@@ -79,16 +86,8 @@
     }
     
     }
-    @keyframes waveAnimation {
-        0% { transform: rotate( 0.0deg) }
-       10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-       20% { transform: rotate(-8.0deg) }
-       30% { transform: rotate(14.0deg) }
-       40% { transform: rotate(-4.0deg) }
-       50% { transform: rotate(10.0deg) }
-       60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-      100% { transform: rotate( 0.0deg) }
-    }
+
+
 
     @media screen and (max-width: 1024px){
         .aboutPage {

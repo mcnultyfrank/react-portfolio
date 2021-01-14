@@ -43,7 +43,7 @@ const TechStack = () => {
         <div data-aos="fade-in">
           <Javascript className = {styles.javascript}/>
           <Typescript className = {styles.typescript}/>
-          <h2 className={styles.firstTitle}>Well versed in Object oriented programming language <span>JavaScript</span>, and superset <span>TypeScript</span></h2>
+          <h2 className={styles.firstTitle}>Well versed in Object oriented programming language <span>JavaScript</span> and superset <span>TypeScript</span></h2>
         </div>
         <div>
           <h2 className={styles.secondTitle}>Adept in Front End Library <span>React.js</span></h2>
@@ -54,10 +54,10 @@ const TechStack = () => {
         <div>
           <Jest className = {styles.jest}/>
           <Cypress className = {styles.cypress}/>
-          <h2 className = {styles.thirdTitle}>Proficient in unit testing Framework <span>Jest</span>, and End to End testing Framework <span>Cypress.io</span></h2>
+          <h2 className = {styles.thirdTitle}>Proficient in unit testing Framework <span>Jest</span> and End to End testing Framework <span>Cypress.io</span></h2>
         </div>
         <div>
-          <h2 className = {styles.fourthTitle}>Competent in version control system <span>Git</span>, and hosting development software <span>Github</span></h2>
+          <h2 className = {styles.fourthTitle}>Competent in version control system <span>Git</span> and hosting development software <span>Github</span></h2>
           <Git className = {styles.git}/>
           <Github className = {styles.github}/>
         </div>
@@ -65,7 +65,7 @@ const TechStack = () => {
           <Html5 className = {styles.html}/>
           <Css3 className = {styles.css}/>
           <Sass className = {styles.sass}/>
-          <h2 className = {styles.fifthTitle}>Skilled in web technology <span>HTML5</span>,style sheet language <span>CSS3</span> and scripting language <span>SASS</span></h2>
+          <h2 className = {styles.fifthTitle}>Skilled in web technology <span>HTML5</span>, style sheet language <span>CSS3</span> and scripting language <span>SASS</span></h2>
         </div>
         <div>
           <h2 className = {styles.sixthTitle}>Skilled in back-end environment <span>Node.js</span></h2>

@@ -38,10 +38,7 @@ const Home = () => {
             </article> 
           </section>
         </div>
-        <TechStack />
 
-
-        
     </div>
   );
 };
