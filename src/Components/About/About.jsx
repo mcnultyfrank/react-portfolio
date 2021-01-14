@@ -23,25 +23,27 @@ const About = () => {
                 I'm most productive when i'm working with others, and have experience working within in a Srum using the Agile framework, where we worked together to deliver our product weekly to our client.
                 <br></br>
                 <br></br>
-                I'm always looking to expand my repertoire of technologies. I'm currently learning about servless technology and the cloud.  
-                <img src= {me} alt="" srcset=""/>
-                
+                I'm always looking to expand my repertoire of technologies. I'm currently learning about servless technology and the cloud.                  
                 </p>
-
+                <img src= {me} alt="" srcset=""/>
 
         </div>
-        <div>
-            <p>
+          <div>
                 <img src= {india} alt="" srcset=""/>
-                I love to travel and in 2019 went exploring around India and Nepal for 6 months.
-                <br></br>
-                <br></br>
-                I'm also university graduate and have a 2:1 BSC from The University Of West of England in Audio and Music Technology, where I learned to develop electronic synthesisers in C and C++.
-                <br></br>
-                <br></br>
-                As well as coding, i'm absolutely obsessed about music and produce electronic music in Ableton Live, and DJ as a hobby on my Technics and  CDJs.
-            </p>
-        </div>
+                <div>
+                  <p>I love to travel and in 2019 went exploring around India and Nepal for 6 months.</p>
+                  <br></br>
+                  <br></br>
+                  <p>I'm also university graduate and have a 2:1 BSC from The University Of West of England in Audio and Music Technology, where I learned to develop electronic synthesisers in C and C++.</p>
+                  <br></br>
+                  <br></br>
+                  <p>As well as coding, i'm absolutely obsessed about music and produce electronic music in Ableton Live, and DJ as a hobby on my Technics and  CDJs.</p>
+                </div>
+          </div>
+          <div>
+             
+              </div>
+            
       </article>    
     </section>
 

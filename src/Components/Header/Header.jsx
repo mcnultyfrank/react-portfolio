@@ -59,7 +59,6 @@ const Header = () => {
 
             <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
                   <div>
-                    <h3>Frank McNulty</h3>
                   <li><Link to = '/skills'><a onClick = {() => setColour(false)}>Skills</a></Link></li> 
                   <li><Link to = '/about'><a onClick = {() => setColour(false)}>About</a></Link></li>
                   <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}>Portfolio</a></Link></li>

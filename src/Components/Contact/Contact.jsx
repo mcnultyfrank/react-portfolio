@@ -41,8 +41,8 @@ const Contact = () => {
       </div> */}
     </div>
     <footer>
-      <LinkedinSquare className = {styles.sideMenuIcon} />
-      <Github className = {styles.sideMenuIcon} />
+    <a className = {styles.menuIcon}  href = "https://www.linkedin.com/in/frank-mcnulty-591785151/"   target="_blank" ><LinkedinSquare  /> </a>
+    <a className = {styles.menuIcon} href = "https://github.com/mcnultyfrank"  target="_blank"><Github  /></a>
     </footer>
   </div>  
   );
