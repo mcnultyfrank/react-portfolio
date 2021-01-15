@@ -25,7 +25,9 @@ import {Firebase} from '@styled-icons/simple-icons/Firebase';
 import {Mongodb} from '@styled-icons/simple-icons/Mongodb';  
 import {Plus} from '@styled-icons/boxicons-regular/Plus';  
 import {Minus} from '@styled-icons/boxicons-regular/Minus';  
+import {Animated} from "react-animated-css";
 
+ 
 
 // import {waving} from "../../Photos/";
 
@@ -80,7 +82,8 @@ const Home = () => {
           </header> */}
           <Minus onClick={toggleDown} className = {styles.next}/>
           <section className = {styles.heroTextContainer}>
-            <div  style = {open !== 0 ? noDisplayInfo : null } className = {styles.heroText}  > 
+            
+            <div style = {open !== 0 ? noDisplayInfo : null } className = {styles.heroText}  > 
             <h3>Frank McNulty</h3>
             <h3>Software Developer</h3>
                 {/* <p>Hi, i'm Frank McNulty, a software developer based in the UK</p> */}
@@ -91,6 +94,7 @@ const Home = () => {
                   <button><a  className = {styles.heroTextButtons} href = "https://www.linkedin.com/in/frank-mcnulty-591785151/" target="_blank">View my <span>linkedIn</span></a></button>
                 </div> */}
             </div> 
+          
             <div style = {open !== 1 ? noDisplayInfo : null }  >
           <Javascript className = {styles.javascript}/>
           <Typescript className = {styles.typescript}/>
