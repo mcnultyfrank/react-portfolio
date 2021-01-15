@@ -27,7 +27,7 @@ const About = () => {
                 I thoroughly enjoy creating compelling designs by following modern UI and UX design principles and applying them to my projects. 
                 <br></br>
                 <br></br>
-                I'm most productive when I'm working with others, and have experience working within in a Scrum using the Agile framework, where we worked together to deliver our product weekly to our client.
+                I'm most productive when I'm working with others, and have experience using Agile project management methodologies such as SCRUM, which ensured that we were constantly shipping value to our clients.
                 <br></br>
                 <br></br>
                 I'm always looking to expand my repertoire of technologies. I'm currently learning about serverless technology and the cloud.                  
