@@ -7,6 +7,7 @@ import weatherImage from "../../Photos/ipadiphonweatherapp.png";
 import toDoImage from "../../Photos/todolist.png";
 import notesImage from "../../Photos/Untitled-2.png";
 import morseImage from "../../Photos/morseipad.png";
+import sharemytip from "../../Photos/sharemytip.png";
 import {Javascript} from '@styled-icons/boxicons-logos/Javascript';
 import {ReactLogo} from '@styled-icons/boxicons-logos/ReactLogo';
 import {Firebase} from '@styled-icons/simple-icons/Firebase';
@@ -16,7 +17,14 @@ const Portfolio = () => {
     useEffect(() => {
         return window.scrollTo(0, 0);
       },[])
-    const [infoToggle, setInfoToggle] = useState(false)
+    const [infoToggleDada, setInfoToggleDada] = useState(false)
+    const [infoToggleBrew, setInfoToggleBrew] = useState(false)
+    const [infoToggleTip, setInfoToggleTip] = useState(false)
+    const [infoToggleWeather, setInfoToggleWeather] = useState(false)
+    const [infoToggleToDo, setInfoToggleToDo] = useState(false)
+    const [infoToggleNotes, setInfoToggleNotes] = useState(false)
+    const [infoToggleMorse, setInfoToggleMorse] = useState(false)
+
     const noDisplayInfo = {
         display: 'none'
     }
@@ -29,9 +37,9 @@ const Portfolio = () => {
   <section className = {styles.portfolioPage} >
     
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null}   src={dadaImage} srcset=""/>
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleDada === true ? hidePortfolio : null}   src={dadaImage} srcset=""/>
+            <button onClick = {() => setInfoToggleDada(!infoToggleDada)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleDada === false ? noDisplayInfo : null}>
                 <li>Dada <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/><Firebase className = {styles.firebase}/></li>
                 <p>Progressive Web App for Parental education, targeted at Dads</p>
             </div>
@@ -39,19 +47,29 @@ const Portfolio = () => {
             <a href = "https://dada-da4d5.web.app/" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
         <article> 
-            <img style = {infoToggle === true ? hidePortfolio : null} src={punkApiImage}/>
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleBrew === true ? hidePortfolio : null} src={punkApiImage}/>
+            <button onClick = {() => setInfoToggleBrew(!infoToggleBrew)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleBrew === false ? noDisplayInfo : null}>
                 <li>Brewdog API <ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/><Firebase className = {styles.firebase}/></li>
                 <p>Functional React Application built using an API to find the finest brews</p>
             </div>
             <a href = "https://github.com/mcnultyfrank/Punk-Api" target="_blank"><button className = {styles.codeButton}>Code</button></a>
             <a href = "https://franksbrewdogapi.web.app/" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
+        <article> 
+            <img style = {infoToggleTip === true ? hidePortfolio : null} src={sharemytip}/>
+            <button onClick = {() => setInfoToggleTip(!infoToggleTip)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleTip === false ? noDisplayInfo : null}>
+                <li>Share My Tip<ReactLogo className = {styles.react}/><Javascript className = {styles.javascript}/></li>
+                <p>PWA bill and tip calculator with an interactive tip bar, currency options and more.</p>
+            </div>
+            <a href = "https://github.com/mcnultyfrank/share_my_tip" target="_blank"><button className = {styles.codeButton}>Code</button></a>
+            <a href = "https://sharemytip.web.app/" target="_blank"><button class = {styles.appButton}>App</button></a>
+        </article>
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null} src={weatherImage} />
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleWeather === true ? hidePortfolio : null} src={weatherImage} />
+            <button onClick = {() => setInfoToggleWeather(!infoToggleWeather)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleWeather === false ? noDisplayInfo : null}>
                 <li>liveWeather<Javascript className = {styles.javascript}/></li>
                 <p>Live global weather application, built using an API in vanilla JavaScript</p>
             </div>
@@ -59,9 +77,9 @@ const Portfolio = () => {
             <a href = "https://mcnultyfrank.github.io/Weather-App/" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null} src={toDoImage} />
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleToDo === true ? hidePortfolio : null} src={toDoImage} />
+            <button onClick = {() => setInfoToggleToDo(!infoToggleToDo)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleToDo === false ? noDisplayInfo : null}>
                 <li>ToDo List<ReactLogo className = {styles.react}/> <Javascript className = {styles.javascript}/></li>
                 <p>To do list built with class based React. Also includes a random name API</p>
             </div>
@@ -69,9 +87,9 @@ const Portfolio = () => {
             <a href = "https://classbasedtodolist.web.app" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null} src={notesImage} />
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleNotes === true ? hidePortfolio : null} src={notesImage} />
+            <button onClick = {() => setInfoToggleNotes(!infoToggleNotes)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleNotes === false ? noDisplayInfo : null}>
                 <li>noteMaker <Javascript className = {styles.javascript}/></li>
                 <p>Comprehensive note make, built using vanilla Javascript</p>
             </div>
@@ -79,9 +97,9 @@ const Portfolio = () => {
             <a href = "https://mcnultyfrank.github.io/Notes/" target="_blank"><button class = {styles.appButton}>App</button></a>
         </article>
         <article>
-            <img style = {infoToggle === true ? hidePortfolio : null} src={morseImage} />
-            <button onClick = {() => setInfoToggle(!infoToggle)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
-            <div style = {infoToggle === false ? noDisplayInfo : null}>
+            <img style = {infoToggleMorse === true ? hidePortfolio : null} src={morseImage} />
+            <button onClick = {() => setInfoToggleMorse(!infoToggleMorse)} className = {styles.appInfoButton}><InfoCircleFill className = {styles.q}/></button>
+            <div style = {infoToggleMorse === false ? noDisplayInfo : null}>
                 <li>MorseTranslate <Javascript className = {styles.javascript}/></li>
                 <p>Morse Code translator, for those times of need</p>
             </div>

@@ -17,8 +17,8 @@ const Routes = () => {
           <Home path = "home"/>
           <About path = "about"/>
           <Contact path = "contact"/>
-          <TechStack path = "/"/>
-          <Portfolio path = "portfolio" />
+          <TechStack path = "skills"/>
+          <Portfolio path = "/" />
         </Router>
     </>
 

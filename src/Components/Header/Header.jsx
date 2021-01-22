@@ -12,6 +12,11 @@ const Header = () => {
   const [colour, setColour] = useState(false);
   const [url, setUrl] = useState('');
 
+  useEffect(() => {
+    setColour(true);
+
+  }, [])
+
     const noDisplayContents = {
       transform: 'translateX(200%)'
     }
@@ -52,9 +57,9 @@ const Header = () => {
                   <li><Link to= '/home'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink}>Home</a></Link></li>                        
                 </div>
                 <div>
-                  <li><Link to = '/'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>
+                  <li><Link to = '/skills'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>
                   <li><Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true  ? blackLink : whiteLink}>About</a></Link></li>                    
-                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
+                  <li><Link to = '/'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Contact</a></Link></li>
                 </div>
               </div> 
@@ -65,9 +70,9 @@ const Header = () => {
 
             <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList}>
                   <div>
-                  <li><Link to = '/'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>Skills</a></Link></li> 
+                  <li><Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>Skills</a></Link></li> 
                   <li><Link to = '/about'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>About</a></Link></li>
-                  <li><Link to = '/portfolio'><a onClick = {() => setColourToBlackAndCloseSideMenu()}>Portfolio</a></Link></li>
+                  <li><Link to = '/'><a onClick = {() => setColourToBlackAndCloseSideMenu()}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>Contact</a></Link></li>
                   </div>
                   <section>
