@@ -14,11 +14,11 @@ const Routes = () => {
   return (
     <>
         <Router>
-          <Home path = "home"/>
+          <Home path = "/"/>
           <About path = "about"/>
           <Contact path = "contact"/>
           <TechStack path = "skills"/>
-          <Portfolio path = "/" />
+          <Portfolio path = "portfolio" />
         </Router>
     </>
 

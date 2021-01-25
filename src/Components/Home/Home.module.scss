@@ -5,6 +5,7 @@
             z-index: 0;
             background-size: cover;
             overflow: hidden;
+
             
     }
     
@@ -14,22 +15,43 @@
         width: 100vw;
         overflow: hidden;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+
     }
     
     .videoBG {
         z-index: -1;
         position: absolute;
+        // height: 100vh;
+        // height: auto;
+        min-height: 100%;
+        min-width: 100%;
         width: auto;
         height: auto;
-        min-width: 100%;
-        min-height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    // @media only screen and (max-width: 1200px ){
+    //     .videoBG {
+    //         z-index: -1;
+    //         position: absolute;
+    //         width: auto;
+    //         height: 100%;
     
+    //     }
+    // }
+    // @media only screen and (min-height: 1200px ){
+    //     .videoBG {
+    //         z-index: -1;
+    //         position: absolute;
+    //         width: 100vw;
+    //         height: auto;
+    
+    //     }
+    // }
+     
     .fa-battery-full {
         font-size: 2vw;
         /* animation: shake 0.5s; */
@@ -78,17 +100,71 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            bottom: 30%;
-            width: 80%;
-            padding: 1vw;
-            margin: 1vw;
+            width: 100%;
+            bottom: 0.5%;
+            // height: 100vh;
+            // padding: 1vw;
             
             div {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-    
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 30vh;
+                    // border-left: 1px solid white;
+                    // background-color: rgba($color: #5C73F2, $alpha: 0.1);
+                    .heroTextButtons {
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: .5s;
+                        width: 4rem;
+                        z-index: 3;
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.2);
+
+                        }
+                    }
+                }
+                div:nth-child(1){
+                    
+                background-color: rgba($color: #BE3E35, $alpha: 0.2);
+                    .heroTextButtons{
+                        width: 2.8rem;
+                        margin: 2rem;
+                        color:  rgba($color: #BE3E35, $alpha: 0.6);
+                        &:hover {
+                            color:  rgba($color: #BE3E35, $alpha: 1);
+                        }
+                        
+                    }
+                    
+                }
+                div:nth-child(2){
+                    background-color: rgba($color: #939DA6, $alpha: 0.2);
+       
+                        .heroTextButtons{
+                            color:  rgba($color: #939DA6, $alpha: 0.6);
+                            &:hover {
+                                color:  rgba($color: #939DA6, $alpha: 1);
+                            }
+                        }
+                    }
+                    div:nth-child(3){
+                        background-color: rgba($color: #5C73F2, $alpha: 0.2);
+               
+                            .heroTextButtons{
+                                color:  rgba($color: #5C73F2, $alpha: 0.6);
+                                &:hover {
+                                    color:  rgba($color: #5C73F2, $alpha: 1);
+                                }
+                            }
+                        }
+                    
                 button {
                     font-size: 3vw;
                     font-weight: 600;
@@ -103,25 +179,7 @@
                     a {
                         text-decoration: none;
                     }
-                    .heroTextButtons {
-                        color: #2C2A2C;
-                        text-decoration: none;
-                        font-weight: 600;
-                        transition: .5s;
-
-                        &:hover {
-                            color: #f6eee0;
-
-                
-                        }
-                        
-                        // &:hover {
-                        //     transform: scale(1.05);
-                        //     background-color:#2C2A2C ;
-                        //     color: #f6eee0;
-                
-                        // }
-                    }
+                    
         
                     cursor: pointer;
                     &:hover {
@@ -148,9 +206,11 @@
             p {
                 font-size: 5.5vw;
                 font-weight: 600;
+                // background-color: rgba($color: white, $alpha: 0.2);
                 // padding: 2vw 0vw 1vw 0vw;
-                border-radius: 20px;
-                opacity: 1;
+                padding-bottom: 25vh;
+                // border-radius: 20px;
+                opacity: 0.7;
                 transition: 1s;
                 
             }

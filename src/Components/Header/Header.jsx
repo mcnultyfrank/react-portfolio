@@ -13,8 +13,7 @@ const Header = () => {
   const [url, setUrl] = useState('');
 
   useEffect(() => {
-    setColour(true);
-
+     setColourHeaderOnMount();
   }, [])
 
     const noDisplayContents = {
@@ -40,6 +39,14 @@ const Header = () => {
       setOpen(false);
       return;
     }
+    const setColourHeaderOnMount = () => {
+      if (window.location.pathname === '/portfolio'){
+        return setColourToBlackAndCloseSideMenu();
+      }else {
+        return setColourToWhiteAndCloseSideMenu();
+      }
+      
+    }
     const setColourToBlackAndCloseSideMenu = () => {
       setColour(true);
       setOpen(false);
@@ -54,12 +61,12 @@ const Header = () => {
 
               <div  className = {styles.desktopNav}>  
                 <div>
-                  <li><Link to= '/home'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink}>Home</a></Link></li>                        
+                  <li><Link to= '/'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink}>Home</a></Link></li>                        
                 </div>
                 <div>
                   <li><Link to = '/skills'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Skills</a></Link></li>
                   <li><Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true  ? blackLink : whiteLink}>About</a></Link></li>                    
-                  <li><Link to = '/'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
+                  <li><Link to = '/portfolio'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink}>Contact</a></Link></li>
                 </div>
               </div> 
@@ -72,7 +79,7 @@ const Header = () => {
                   <div>
                   <li><Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>Skills</a></Link></li> 
                   <li><Link to = '/about'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>About</a></Link></li>
-                  <li><Link to = '/'><a onClick = {() => setColourToBlackAndCloseSideMenu()}>Portfolio</a></Link></li>
+                  <li><Link to = '/portfolio'><a onClick = {() => setColourToBlackAndCloseSideMenu()}>Portfolio</a></Link></li>
                   <li><Link to = '/contact'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}>Contact</a></Link></li>
                   </div>
                   <section>
