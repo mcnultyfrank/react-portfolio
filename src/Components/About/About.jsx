@@ -1,7 +1,5 @@
 import React, {useEffect} from "react";
 import styles from "./About.module.scss";
-import me from "../../Photos/me.JPG"
-import india from "../../Photos/india.jpg"
 import recommendation1 from "../../Photos/recommendation1.png"
 import recommendation2 from "../../Photos/recommendation2.png"
 
@@ -32,10 +30,10 @@ const About = () => {
                 <br></br>
                 I'm always looking to expand my repertoire of technologies. I'm currently learning about serverless technology and the cloud.                  
                 </p>
-                <img src= {me} className = {styles.bioImgs} alt="" srcset=""/>
+                <img src='https://firebasestorage.googleapis.com/v0/b/mcnultydev.appspot.com/o/me.JPG?alt=media&token=18ebae4e-689c-4e86-b3db-4f4a2551ddb1'className = {styles.bioImgs} alt="" srcset=""/>
           </div>
           <div>
-                <img className = {styles.bioImgs} src= {india} alt="" srcset=""/>
+                <img className = {styles.bioImgs} src= 'https://firebasestorage.googleapis.com/v0/b/mcnultydev.appspot.com/o/india.jpg?alt=media&token=5e35cc40-cd3a-4b2f-9f38-3e7b6f0cb2c7' alt="" srcset=""/>
                 <div>
                   <p>
                   I love to travel and in 2019 went exploring around India and Nepal for 6 months.
