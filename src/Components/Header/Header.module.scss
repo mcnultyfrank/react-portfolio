@@ -16,8 +16,6 @@
             cursor: pointer;
             &:hover{
                 background-color: rgba($color: #F29429, $alpha: 0.8);
-            }
-            &:hover{
                 color: #F2C335;
                 transform: scale(1.1);
             }
@@ -156,43 +154,50 @@
             text-decoration: none;
             transition: 0.3s ease;
             z-index: 99;
-            width: 20vw;
+            width: 25vw;
             height: 80%;
-            
-            border-bottom-right-radius: 20px;
-            // border-bottom--radius: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // text-align: center;
             border-right: 1px solid #f6eee0;
             border-bottom: 1px solid #f6eee0;
             border-top: 1px solid #f6eee0;
-
-
-
             justify-content: space-around;
             color: #f6eee0;
             background-color: rgba($color: #2C2A2C, $alpha: 0.9) ;
+            .headerIcon {
+                padding: 10px;
+                border-radius: 5px;
+                margin: 17px;
+                transition: .4s ease;
+                background-color: rgba($color: #2C2A2C, $alpha: 0.3);
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba($color: #F29429, $alpha: 0.8);
+                    color: #F2C335;
+                    transform: scale(1.1);
+                }
+            }
+            p {
+                display: contents;
+                font-size: 16px;
+                color: white;
+            }
             div {
-                width: 80%;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center; 
                 text-align: center;
                 justify-content: space-around;
                 height: 80%;
-                // border-bottom: 1px solid white;
-                h3 {
-                    // animation: animate 10s infinite;
-                }
             }
             section {
-                width: 80%;
-
+                width: 100%;
                 display: flex;
                 flex-direction: row;
-                // height: 20%;
                 justify-content: space-around;
                 text-decoration: none;
                 .sideMenuIcon {
@@ -216,13 +221,21 @@
             }
             li {
                 list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                
             }
             a {
                 cursor: pointer;
                 align-items: center;
                 text-align: center;
                 justify-content: space-evenly;
-                font-size: 27px;
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
             }
 
             .menuIcon {
@@ -246,3 +259,11 @@
         100% {color: #5C73F2 }
         }
         
+        @media only screen and (max-width: 600px) {
+            .burgerMenuList{
+                p{
+                    display: none;
+                }
+            }
+
+        }

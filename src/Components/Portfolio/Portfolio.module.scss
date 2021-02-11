@@ -70,7 +70,6 @@
             }
             p {
                 font-size: 90%;
-
             }
             .appInfoButton {
                 position: absolute;
@@ -78,15 +77,19 @@
                 right: 0%;
                 width: 15%;
                 height: 15%;
-                border-top-left-radius: 10px;
+                // border-top-left-radius: 10px;
                 color: #2C2A2C;
                 background: #f6eee0;
                 transition: 0.5s;
-
-                &:hover {
-                    background-color: #2C2A2C;
-                    color: white;
-
+                padding: 5px;
+                border-radius: 10px;
+                margin: 5px;
+                background-color: rgba($color: #2C2A2C, $alpha: 0.3);
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba($color: #F29429, $alpha: 0.8);
+                    color: #F2C335;
+                    transform: scale(1.02);
                 }
                 .q {
                 width: 40%;
@@ -94,7 +97,7 @@
             }
             img {
                 border-radius: 1px;
-                image-rendering: pixelated;
+                image-rendering: optimizeSpeed;
                 position: absolute;
                 object-fit: cover;
                 background-size: cover;
@@ -106,24 +109,7 @@
                 left: 0;
                 margin: 0;
                 transition: '0.5s',
-
-                /* height: 1fr; */
-                /* padding-top: 250px; */
             }
-            // div {
-            // height: 100%;
-            // width: 100%;
-            // display: flex;
-            // flex-direction: column;
-            // text-align: center;
-            // align-items: center;
-            // h2{
-            //     font-size: 40px;
-            //     border-bottom: 1px solid black;
-            //     margin: 3vw;
-            // }
-            // }
-        
         }
 }
 

@@ -7,48 +7,17 @@
     overflow: hidden;
 
     div {
-
-        font-size: 40px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: space-evenly;
-        color: #BE3E35;
-
+        color: white;
         img {
             width: 40%;
             image-rendering: optimizeSpeed;
         }
-
-
-        form {
-            padding: 1vh;
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            input {
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid #f6eee0;
-                font-size: 3vw;
-                padding: 1vh;
-                color: #f6eee0;
-
-                &::placeholder {
-                    color: #f6eee0;
-                }
-            }
-            .message {
-                margin: 0.5vw;
-                font-size: 3vw;
-                height: 30vh;
-                border: 0.5px solid #f6eee0;
-                border-radius: 10px;
-            }
-        }
-
     }
 
 }
