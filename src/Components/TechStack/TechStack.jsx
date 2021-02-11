@@ -46,7 +46,7 @@ const TechStack = () => {
         <div data-aos="fade-in">
           <Javascript className = {styles.javascript}/>
           <Typescript className = {styles.typescript}/>
-          <h2 className={styles.firstTitle}>Well versed in Object oriented programming language <span>JavaScript</span> and superset <span>TypeScript</span></h2>
+          <h2 className={styles.firstTitle}>Well versed in Object Oriented and Functional Programming in <span>JavaScript</span> and superset <span>TypeScript</span></h2>
         </div>
         <div>
           <h2 className={styles.secondTitle}>Adept in Front End Library <span>React.js</span></h2>
