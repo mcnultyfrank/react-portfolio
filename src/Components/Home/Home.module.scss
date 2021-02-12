@@ -1,14 +1,4 @@
-    .container{
-            position: relative;
-            background-color: #B5AFA5;
-            /* background-image: url("Photos/noise.gif"); */
-            z-index: 0;
-            background-size: cover;
-            overflow: hidden;
 
-            
-    }
-    
     .videoContainer {
         position: relative;
         height: 100vh;
@@ -17,6 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: rgba($color: #2C2A2C, $alpha: 1);
         .lottieContainer{
             width: 100vw;
             height: 100vh;
@@ -27,10 +18,7 @@
     }
     
     .videoBG {
-        z-index: -1;
         position: absolute;
-        // height: 100vh;
-        // height: auto;
         min-height: 100%;
         min-width: 100%;
         width: auto;
@@ -39,66 +27,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    // @media only screen and (max-width: 1200px ){
-    //     .videoBG {
-    //         z-index: -1;
-    //         position: absolute;
-    //         width: auto;
-    //         height: 100%;
-    
-    //     }
-    // }
-    // @media only screen and (min-height: 1200px ){
-    //     .videoBG {
-    //         z-index: -1;
-    //         position: absolute;
-    //         width: 100vw;
-    //         height: auto;
-    
-    //     }
-    // }
-     
-    .fa-battery-full {
-        font-size: 2vw;
-        /* animation: shake 0.5s; */
-    }
-    
-    .fas .tooltiptext {
-        font-size: 1vw;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        visibility: hidden;
-        width: 100px;
-        background-color: transparent;
-        color: #fff;
-        text-align: left;
-        // border-radius: 6px;
-        padding-left: 10px;
-        position: absolute;
-        left: 100%;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 0.1s;
-    }
-    
-    .fas:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .fa-battery-quarter {
-        color: #F2E56F;
-        opacity: 0.5;
-    }
-    
-    .fa-battery-full {
-        opacity: 1;
-    }
-    
     .heroTextContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        height: 100vh;
         .heroText {
             position: absolute;
             color: white;
@@ -106,24 +39,22 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 100%;
-            bottom: 0.5%;
-            
-            // height: 100vh;
-            // padding: 1vw;
+
+            bottom: 0.5%;            
+
             
             div {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-around;                
                 div {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    height: 30vh;
-                    // border-left: 1px solid white;
-                    // background-color: rgba($color: #5C73F2, $alpha: 0.1);
+                    border-radius: 5px;
+                    margin: 1vw;
+                    padding: 5vh;
                     .heroTextButtons {
                         text-decoration: none;
                         font-weight: 600;
@@ -133,7 +64,6 @@
                         cursor: pointer;
                         &:hover {
                             transform: scale(1.2);
-
                         }
                     }
                 }
@@ -185,9 +115,7 @@
                     transition: .5s;
                     a {
                         text-decoration: none;
-                    }
-                    
-        
+                    }                    
                     cursor: pointer;
                     &:hover {
                         transform: scale(1.05);
@@ -210,61 +138,20 @@
             p {
                 font-size: 5.5vw;
                 font-weight: 600;
-                // background-color: rgba($color: white, $alpha: 0.2);
-                // padding: 2vw 0vw 1vw 0vw;
-                padding-bottom: 25vh;
-                
-                // border-radius: 20px;
+                background-color: rgba($color: white, $alpha: 0.3);
+                color: rgba($color: white, $alpha: 0.97);
+                border-radius: 5px;
+                margin-bottom: 20vh;
+                width: 80%;
                 opacity: 0.7;
                 transition: 1s;
                 
             }
         }
     }
-   
-    .typing {
-        z-index: 1;
-        animation: typing 10s steps(100, end), blink-caret 0.75s step-end infinite;
-    }
-    
-    .blinking {
-        animation: blinkingText 2.2s infinite;
-    }
-    
-    .downArrow {
-        cursor: pointer;
-        background: rgba(255, 255, 255, 0.05);
-        color: white;
-        height: 10vh;
-        top: 90vh;
-        position: absolute;
-        width: 100%;
-        border: none;
-        outline: none;
-        transition: 0.3s;
-        opacity: 0.5;
-    }
-    
-    .downArrow:hover {
-        background: rgba(255, 255, 255, 0.3);
-    }
-    
-    .fa-angle-down {
-        height: 0;
-        z-index: -1;
-        font-size: 3vw;
-        background-color: transparent;
-        animation: float2 1s infinite;
-        transition: 0.3s ease-in-out;
-    }
-    
-    .fa-angle-down:hover {
-        font-size: 2.8vw;
-    }
     
     .javascript{
         animation: animate 10s infinite;
-
         opacity: 0.3;
         width: 5%;
         color: #F2C335;
@@ -275,10 +162,3 @@
         width: 3%;
         color: #5C73F2;
     }
-
-    @keyframes animate{
-    0% {color: #5C73F2 }
-    50% {color: #F2C335}
-    100% {color: #5C73F2 }
-    }
-    

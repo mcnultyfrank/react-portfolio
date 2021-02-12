@@ -5,6 +5,7 @@ import {ReactLogo} from '@styled-icons/boxicons-logos/ReactLogo';
 import {Firebase} from '@styled-icons/simple-icons/Firebase';
 import {InfoCircleFill} from '@styled-icons/bootstrap/InfoCircleFill';
 
+
 const Portfolio = () => {
     useEffect(() => {
         return window.scrollTo(0, 0);

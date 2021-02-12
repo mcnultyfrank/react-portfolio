@@ -8,6 +8,8 @@ import { faBars, faTimes, faHome, faBookOpen, faFolderOpen, faAddressBook} from 
 import styled from 'styled-components';
 import {LinkedinSquare} from '@styled-icons/boxicons-logos/LinkedinSquare';
 import {Github} from '@styled-icons/boxicons-logos/Github';
+import { motion } from "framer-motion";
+
 
 
 
@@ -16,12 +18,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const [colour, setColour] = useState(false);
 
-  // useEffect(() => {
-  //   setColourHeaderOnMount();
-  // }, [])
-
     const noDisplayContents = {
-      transform: 'translateX(-100%)'
+      transform: 'translateX(-110%)'
     }
     const displayContents = {
       transform: 'translateY(100%)',
@@ -31,7 +29,7 @@ const Header = () => {
       color: '#2C2A2C',
     }
     const whiteLink = {
-      color: 'white'
+      color: 'white',
     }
 
     const setColourToWhiteAndCloseSideMenu = () => {
@@ -39,13 +37,6 @@ const Header = () => {
       setOpen(false);
       return;
     }
-    // const setColourHeaderOnMount = () => {
-    //   if (window.location.pathname === '/portfolio'){
-    //     return setColourToBlackAndCloseSideMenu();
-    //   }else {
-    //     return setColourToWhiteAndCloseSideMenu();
-    //   }
-    // }
     const setColourToBlackAndCloseSideMenu = () => {
       setColour(true);
       setOpen(false);
@@ -62,23 +53,23 @@ const Header = () => {
                   <li>
                     <Link to= '/'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink} data-tip="React-tooltip" data-for='home' ><FontAwesomeIcon icon = {faHome} size='lg' className={styles.headerIcon}/></a></Link>
                   </li>                        
-                  <ReactTooltip id='home' arrowColor='black' backgroundColor='#2C2A2C' place="bottom" type="info" effect="solid">Home</ReactTooltip>
+                  <ReactTooltip id='home' arrowColor='black' arrowColor='blue' arrow backgroundColor='#2C2A2C' place="bottom" type='success' effect="solid">Home</ReactTooltip>
                 </div>
                 <div>
                   <li>
-                    <Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink} data-tip="React-tooltip" data-for='Skills' ><FontAwesomeIcon icon = {faJsSquare} size='lg' className={styles.headerIcon}/></a></Link>
+                    <Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {colour === true ? blackLink : whiteLink} data-tip="React-tooltip" data-for='Skills' ><FontAwesomeIcon icon = {faJsSquare}  className={styles.headerIcon}/></a></Link>
                   </li>
                     <ReactTooltip id='Skills' arrowColor='black' backgroundColor='#2C2A2C' place="bottom" type="info" effect="solid">Skills</ReactTooltip>
                   <li>
-                    <Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true  ? blackLink : whiteLink} data-tip="React-tooltip" data-for='about' ><FontAwesomeIcon icon = {faBookOpen} size='lg' className={styles.headerIcon}/></a></Link>
+                    <Link to = '/about'><a onClick = {() => setColour(false)} style = {colour === true  ? blackLink : whiteLink} data-tip="React-tooltip" data-for='about' ><FontAwesomeIcon icon = {faBookOpen}className={styles.headerIcon}/></a></Link>
                   </li>        
                     <ReactTooltip id='about' arrowColor='black' backgroundColor='#2C2A2C' place="bottom" type="info" effect="solid">About</ReactTooltip>            
                   <li>
-                    <Link to = '/portfolio'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink} data-tip="React-tooltip" data-for='portfolio' ><FontAwesomeIcon icon = {faFolderOpen} size='lg' className={styles.headerIcon}/></a></Link>
+                    <Link to = '/portfolio'><a onClick = {() => setColour(true)}  style = {colour === true ? blackLink  : whiteLink} data-tip="React-tooltip" data-for='portfolio' ><FontAwesomeIcon icon = {faFolderOpen}  className={styles.headerIcon}/></a></Link>
                   </li>
                     <ReactTooltip id='portfolio' arrowColor='black' backgroundColor='#2C2A2C' place="bottom" type="info" effect="solid">Portfolio</ReactTooltip>            
                   <li>
-                    <Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink} data-tip="React-tooltip" data-for='contact' ><FontAwesomeIcon icon = {faAddressBook} size='lg' className={styles.headerIcon}/></a></Link>
+                    <Link to = '/contact'><a onClick = {() => setColour(false)} style = {colour === true ? blackLink : whiteLink} data-tip="React-tooltip" data-for='contact' ><FontAwesomeIcon icon = {faAddressBook} className={styles.headerIcon}/></a></Link>
                   </li>
                     <ReactTooltip id='contact' arrowColor='black' backgroundColor='#2C2A2C' place="bottom" type="info" effect="solid">Contact</ReactTooltip>            
                 </div>
@@ -92,16 +83,16 @@ const Header = () => {
             <div  style={open === true ? displayContents : noDisplayContents}  className = {styles.burgerMenuList} >
                 <div>
                   <li>
-                    <Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {whiteLink} data-tip="React-tooltip" data-for='Skills' ><FontAwesomeIcon icon = {faJsSquare} size='lg' className={styles.headerIcon}/><p>Skills</p></a></Link>
+                    <Link to = '/skills'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {whiteLink} data-tip="React-tooltip" data-for='Skills' ><FontAwesomeIcon icon = {faJsSquare} className={styles.headerIcon}/><p>Skills</p></a></Link>
                   </li>
                   <li>
-                    <Link to = '/about'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}  style = {whiteLink} data-tip="React-tooltip" data-for='about' ><FontAwesomeIcon icon = {faBookOpen} size='lg' className={styles.headerIcon}/><p>About</p></a></Link>
+                    <Link to = '/about'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}  style = {whiteLink} data-tip="React-tooltip" data-for='about' ><FontAwesomeIcon icon = {faBookOpen} className={styles.headerIcon}/><p>About</p></a></Link>
                   </li>        
                   <li>
-                    <Link to = '/portfolio'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}   style = {whiteLink} data-tip="React-tooltip" data-for='portfolio' ><FontAwesomeIcon icon = {faFolderOpen} size='lg' className={styles.headerIcon}/><p>Portfolio</p></a></Link>
+                    <Link to = '/portfolio'><a onClick = {() => setColourToWhiteAndCloseSideMenu()}   style = {whiteLink} data-tip="React-tooltip" data-for='portfolio' ><FontAwesomeIcon icon = {faFolderOpen} className={styles.headerIcon}/><p>Portfolio</p></a></Link>
                   </li>
                   <li>
-                    <Link to = '/contact'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {whiteLink} data-tip="React-tooltip" data-for='contact' ><FontAwesomeIcon icon = {faAddressBook} size='lg' className={styles.headerIcon}/><p>Contact</p></a></Link>
+                    <Link to = '/contact'><a onClick = {() => setColourToWhiteAndCloseSideMenu()} style = {whiteLink} data-tip="React-tooltip" data-for='contact' ><FontAwesomeIcon icon = {faAddressBook} className={styles.headerIcon}/><p>Contact</p></a></Link>
                   </li>
                 </div>
                 <section>

@@ -17,16 +17,10 @@ import {Github} from '@styled-icons/boxicons-logos/Github';
 import {FilePdf} from '@styled-icons/fa-solid/FilePdf';
 
 
-// import {waving} from "../../Photos/";
-
-
-
-
-
 const Home = () => {
-  const [open, setOpen] = useState(false);
-  const [colour, setColour] = useState(false);
-  const [stopAnimation, setStopAnimation] = useState(false);
+  // const [open, setOpen] = useState(false);
+  // const [colour, setColour] = useState(false);
+  // const [stopAnimation, setStopAnimation] = useState(false);
 
 
   useEffect(() => {
@@ -40,14 +34,12 @@ const Home = () => {
     <div className={styles.homecontainer}>
       {/* <Header /> */}
         <div className={styles.videoContainer}>
-          <div></div>
-          <video  className= {styles.videoBG} loading="lazy" autoPlay muted loop playsinline><source src={Ink} type="video/mp4"/></video>
+          <video  className= {styles.videoBG} loading="lazy" autoPlay muted loop playsinline><source src={Ink}/></video>
           <section className = {styles.heroTextContainer}>
             <article className = {styles.heroText}> 
                 <p>Hi, i'm Frank McNulty, a software developer based in the UK</p>
                 <div>
-                <div>
-                    <ReactTooltip id='pdf' arrowColor='black' backgroundColor='#2C2A2C' place="top" type="info" effect="solid">CV</ReactTooltip>
+                  <div>
                     <a href = {cv} download='Frank_McNulty_CV'><FilePdf className = {styles.heroTextButtons} data-tip="React-tooltip" data-for='pdf'  /></a>
                   </div>
                   <div>
@@ -56,12 +48,10 @@ const Home = () => {
                   <div >
                     <a href = "https://www.linkedin.com/in/frank-mcnulty-591785151/" target="_blank"><LinkedinSquare className = {styles.heroTextButtons} /></a>
                   </div>
-                  
                 </div>
             </article> 
           </section>
         </div>
-
     </div>
   );
 };
