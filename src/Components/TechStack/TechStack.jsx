@@ -43,7 +43,7 @@ const TechStack = () => {
   return (
     <div>
       <div className = {styles.container}>
-        <div data-aos="fade-in">
+        <div >
           <Javascript className = {styles.javascript}/>
           <Typescript className = {styles.typescript}/>
           <h2 className={styles.firstTitle}>Well versed in Object Oriented and Functional Programming in <span>JavaScript</span> and superset <span>TypeScript</span></h2>
@@ -51,8 +51,6 @@ const TechStack = () => {
         <div>
           <h2 className={styles.secondTitle}>Adept in Front End Library <span>React.js</span></h2>
           <ReactLogo className = {styles.react}/>
-          {/* , and state management library <span>Redux</span> */}
-          {/* <Redux className = {styles.redux}/> */}
         </div>
         <div>
           <Jest className = {styles.jest}/>

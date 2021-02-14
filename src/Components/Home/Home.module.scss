@@ -8,15 +8,14 @@
         flex-direction: column;
         align-items: center;
         background-color: rgba($color: #2C2A2C, $alpha: 1);
-        .lottieContainer{
-            width: 100vw;
+        section{
             height: 100vh;
-            z-index: 999;
-            background-color: rgba($color: #2C2A2C, $alpha: 0.97);
+            width: 10vw;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
         }
-
     }
-    
     .videoBG {
         position: absolute;
         min-height: 100%;
@@ -30,110 +29,83 @@
     .heroTextContainer {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 100vh;
-        .heroText {
+        align-items: flex-end ;
+        justify-content: space-between;
+        // height: 100vh;
+        width: 100vw;
+        .buttons {
             position: absolute;
             color: white;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-end;
             text-align: center;
+            width: 20vw;
+            // height: 85vh;
 
             bottom: 0.5%;            
 
             
             div {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;                
+                // width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around;        
+                // align-items: flex-end;        
                 div {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     border-radius: 5px;
-                    margin: 1vw;
-                    padding: 5vh;
+                    border-radius: 5px;
+                    margin: 10px;
+                    margin-left: 100px;
+                    width: auto;
+                    cursor: pointer;
+                    transition: .5s;
+                    background-color: rgba($color: #2C2A2C, $alpha: 0.3);
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                     .heroTextButtons {
                         text-decoration: none;
                         font-weight: 600;
-                        transition: .5s;
-                        width: 4rem;
+                        width: 35px;
                         z-index: 3;
-                        cursor: pointer;
-                        &:hover {
-                            transform: scale(1.2);
-                        }
+                                            padding: 15px;
+
+                        
+
                     }
                 }
                 div:nth-child(1){
-                    
-                background-color: rgba($color: #BE3E35, $alpha: 0.2);
-                    .heroTextButtons{
-                        width: 2.8rem;
-                        margin: 2rem;
-                        color:  rgba($color: #BE3E35, $alpha: 0.6);
-                        &:hover {
-                            color:  rgba($color: #BE3E35, $alpha: 1);
-                        }
-                        
+                    background-color: rgba($color: #802A24, $alpha: 0.2);
+                    &:hover {
+                        background-color: rgba($color: #802A24, $alpha: 1);
                     }
-                    
+                    .heroTextButtons{
+                    width: 35px;                       
+                    color:  rgba($color: #BE3E35, $alpha: 1); 
+                    }
                 }
                 div:nth-child(2){
-                    background-color: rgba($color: #939DA6, $alpha: 0.2);
-       
+                    background-color: rgba($color: #5B6166, $alpha: 0.2);
+                    &:hover {
+                        background-color: rgba($color: #5B6166, $alpha: 1);
+                    }
                         .heroTextButtons{
-                            color:  rgba($color: #939DA6, $alpha: 0.6);
-                            &:hover {
-                                color:  rgba($color: #939DA6, $alpha: 1);
-                            }
+                            color:  rgba($color: #939DA6, $alpha: 1);
                         }
                     }
                     div:nth-child(3){
-                        background-color: rgba($color: #5C73F2, $alpha: 0.2);
-               
+                        background-color: rgba($color: #2C3673, $alpha: 0.2);
+                        &:hover {
+                            background-color: rgba($color: #2C3673, $alpha: 1);
+                        }
                             .heroTextButtons{
-                                color:  rgba($color: #5C73F2, $alpha: 0.6);
-                                &:hover {
-                                    color:  rgba($color: #5C73F2, $alpha: 1);
-                                }
+                                color:  rgba($color: #5C73F2, $alpha: 1);
                             }
                         }
-                    
-                button {
-                    font-size: 3vw;
-                    font-weight: 600;
-                    margin: 1vw;
-                    padding: 1.5vw;
-                    margin-bottom: 0.1vw;
-                    background-color: white;
-                    border: 1px solid white;
-                    color: #2C2A2C;
-                    border-radius: 10px;
-                    transition: .5s;
-                    a {
-                        text-decoration: none;
-                    }                    
-                    cursor: pointer;
-                    &:hover {
-                        transform: scale(1.05);
-                        background-color:#2C2A2C ;
-                        color: #f6eee0;
-                    }
-                    span{
-                        font-weight: 700;
-                        color: #939DA6;
-                    }
-                }
-                
-                button:nth-child(2) {
-                    span:nth-child(1){
-                        font-weight: 700;
-                        color: #5C73F2;
-                    }
-                }
             }
             p {
                 font-size: 5.5vw;
