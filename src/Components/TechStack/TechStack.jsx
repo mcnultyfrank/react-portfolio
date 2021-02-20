@@ -19,7 +19,9 @@ import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
 import {Npm} from '@styled-icons/fa-brands/Npm';
 import {Yarn} from '@styled-icons/simple-icons/Yarn';
 import {Firebase} from '@styled-icons/simple-icons/Firebase';
-import {Mongodb} from '@styled-icons/simple-icons/Mongodb'; 
+import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
+import {Php} from '@styled-icons/simple-icons/Php'; 
+
 
 
 
@@ -69,8 +71,9 @@ const TechStack = () => {
           <h2 className = {styles.fifthTitle}>Skilled in web technology <span>HTML5</span>, style sheet language <span>CSS3</span> and scripting language <span>SASS</span></h2>
         </div>
         <div>
-          <h2 className = {styles.sixthTitle}>Skilled in back-end environment <span>Node.js</span></h2>
+          <h2 className = {styles.sixthTitle}>Skilled in back-end environment <span>Node.js</span> and scripting language <span>PHP</span></h2>
           <Nodejs className = {styles.nodejs}/>
+          <Php className = {styles.sass}/>
         </div>
         <div>
           <Npm className = {styles.npm}/>
