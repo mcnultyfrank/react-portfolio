@@ -26,7 +26,6 @@ import {Mongodb} from '@styled-icons/simple-icons/Mongodb';
 
 
 
-import AOS from 'aos';
 
 
 
