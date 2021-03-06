@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import me from "../../Photos/me.JPG"
 import code from "../../Photos/code.png"
 
 import {LinkedinSquare} from '@styled-icons/boxicons-logos/LinkedinSquare';
